@@ -1,39 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<br></br>
+<br></br> 
 
-  <br>
-  <h1 class="text-center">ITEMS IN STOCK</h1>
-  <br>
-  <div class="card">
-    <div class="card-body">
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Item Name</th>
-            <th scope="col">Category</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        {% for item in items %}
-        <tbody>
-          <tr>
-            <td>{{ item.item_name }}</td>
-            <td>{{ item.category }}</td>
-            <td>{{ item.price }}</td>
-            <td>{{ item.quantity }}</td>
-            <td>
-              <a href="{% url 'item_detail' item.id %}">
-                <input type="submit" value="View Item" class="btn btn-dark btn" />
-              </a>
-            </td>
-          </tr>
-        </tbody>
-        {% endfor %}
-      </table>
-    </div>
+  <div class="company">
+    <h1 class="title" style="font-size: 10rem;font-family:'Times New Roman', Times, serif;">
+      The StockHive
+    </h1>
+
+    <small style="font-size: 2.5rem;font-family: brush script mt;"><b>Efficiency Redefined, Inventory Perfected</b></small>
   </div>
-</div>
+
 {% endblock %}
