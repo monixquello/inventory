@@ -18,5 +18,6 @@ urlpatterns = [
 
     # URL for deleting a specific item (you can pass the item ID as a parameter)
     path('items/<int:item_id>/delete/', views.delete_item, name='delete_item'),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
 ]

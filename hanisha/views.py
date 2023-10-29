@@ -48,3 +48,4 @@ def home(request):
 
     # Render the template and pass the data
     return render(request, 'home.html', {'products': item_list})
+
