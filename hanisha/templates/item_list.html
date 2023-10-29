@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Items In Stock</h1>
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">item_name Name</th>
+                        <th scope="col">Quantity</th> 
+                        <th scope="col">List</th> 
+                        <th scope="col">Update</th> 
+                        <th scope="col">Remove</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.category }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.total_quantity }}</td>
+                        <td><a href="{% url 'view_items' item.id %}" class="btn btn-dark">View Item</a></td>
+                        <td><a href="{% url 'edit_item' item.id %}" class="btn btn-dark">Edit Item</a></td>
+                        <td><a href="{% url 'delete_item' item.id %}" class="btn btn-dark">Delete Item</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

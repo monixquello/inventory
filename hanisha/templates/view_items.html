@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Item Details</h1>
+        <div class="card">
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col"> Item Name</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ item.category }}</td>
+                            <td>{{ item.item_name }}</td>
+                            <td>{{ item.quantity }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="{% url 'item_list' %}" class="btn btn-dark">Back to Item List</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

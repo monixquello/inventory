@@ -1,0 +1,27 @@
+
+/* home.css */
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    background-color: white;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: white;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}

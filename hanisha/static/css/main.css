@@ -1,0 +1,56 @@
+/* main.css */
+
+/* Body */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #333;
+  }
+  
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: #ff5733;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Social Icons */
+  .socials a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  /* Add any additional styles you need */
+  
