@@ -21,10 +21,10 @@
                     <tr>
                         <td>{{ item.category }}</td>
                         <td>{{ item.name }}</td>
-                        <td>{{ item.total_quantity }}</td>
+                        <td>{{ item.quantity }}</td>
                         <td><a href="{% url 'view_items' item.id %}" class="btn btn-dark">View Item</a></td>
-                        <td><a href="{% url 'edit_item' item.id %}" class="btn btn-dark">Edit Item</a></td>
-                        <td><a href="{% url 'delete_item' item.id %}" class="btn btn-dark">Delete Item</a></td>
+                        <td><a href="{% url 'edit_item' item.id %}" class="btn btn-warning">Edit Item</a></td>
+                        <td><a href="{% url 'delete_item' item.id %}" class="btn btn-danger">Delete Item</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
